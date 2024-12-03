@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats Recentes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f9f9f9;
+        }
+        .header {
+            background: linear-gradient(90deg, #7435e7, #7435e7);
+            color: white;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .search-bar {
+            margin-top: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .tab-btns {
+            background-color: #f0f0f0;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+        .tab-btns button {
+            border: none;
+            background: none;
+            flex: 1;
+            padding: 10px 15px;
+            color: #6c757d;
+            font-weight: bold;
+        }
+        .tab-btns button.active {
+            background-color: white;
+            color: #4a4aa8;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .chat-list {
+            margin-top: 20px;
+        }
+        .chat-item {
+            background-color: white;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .chat-item img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+        .chat-item .chat-info {
+            flex: 1;
+            margin-left: 10px;
+        }
+        .chat-item .chat-info h6 {
+            margin: 0;
+            font-size: 16px;
+        }
+        .chat-item .chat-info p {
+            margin: 0;
+            font-size: 14px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <button class="btn btn-light">
+            <i class="bi bi-arrow-left"></i>
+        </button>
+        <span>StreetPlay</span>
+        <img src="path_to_logo.png" alt="Logo" width="40">
+    </header>
+ 
+    <div class="container mt-3">
+        <div class="search-bar p-2">
+            <div class="input-group">
+                <span class="input-group-text bg-transparent border-0">
+                    <i class="bi bi-search"></i>
+                </span>
+                <input type="text" class="form-control border-0" placeholder="Search">
+            </div>
+        </div>
+ 
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <h5 class="mb-0">Chats recentes</h5>
+            <a href="#" class="text-primary">+ Nova mensagem</a>
+        </div>
+ 
+        <div class="tab-btns d-flex mt-3">
+            <button class="active">Chats</button>
+            <button>Grupos</button>
+        </div>
+ 
+        <div class="chat-list">
+           
+            <div class="chat-item">
+                <img src="path_to_image.jpg" alt="Kondzilla">
+                <div class="chat-info">
+                    <h6>Kondzilla</h6>
+                    <p>Mas me conta...</p>
+                </div>
+                <span class="text-muted">3:02 PM</span>
+            </div>
+            <div class="chat-item">
+                <img src="path_to_image.jpg" alt="Kondzilla">
+                <div class="chat-info">
+                    <h6>Kondzilla</h6>
+                    <p>Mas me conta...</p>
+                </div>
+                <span class="text-muted">3:02 PM</span>
+            </div>
+            <div class="chat-item">
+                <img src="path_to_image.jpg" alt="Kondzilla">
+                <div class="chat-info">
+                    <h6>Kondzilla</h6>
+                    <p>Mas me conta...</p>
+                </div>
+                <span class="text-muted">3:02 PM</span>
+            </div>
+            <div class="chat-item">
+                <img src="path_to_image.jpg" alt="Kondzilla">
+                <div class="chat-info">
+                    <h6>Kondzilla</h6>
+                    <p>Mas me conta...</p>
+                </div>
+                <span class="text-muted">3:02 PM</span>
+            </div>
+            <div class="chat-item">
+                <img src="path_to_image.jpg" alt="Kondzilla">
+                <div class="chat-info">
+                    <h6>Kondzilla</h6>
+                    <p>Mas me conta...</p>
+                </div>
+                <span class="text-muted">3:02 PM</span>
+            </div>
+        </div>
+    </div>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
